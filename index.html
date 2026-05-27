@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study: Subway Staff Training Tool - Dey Bas</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #fff;
+        }
+        header {
+            border-bottom: 2px solid #eaeaea;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        h1 { font-size: 32px; color: #111; margin-bottom: 5px; }
+        h2 { font-size: 22px; color: #036b3b; margin-top: 30px; border-bottom: 1px solid #f0f0f0; padding-bottom: 5px; }
+        h3 { font-size: 16px; color: #555; margin-bottom: 20px; font-weight: normal; }
+        .meta-box {
+            background-color: #f9f9f9;
+            border-left: 4px solid #036b3b;
+            padding: 15px;
+            margin-bottom: 30px;
+            font-size: 15px;
+        }
+        .image-placeholder {
+            background-color: #f0f2f5;
+            border: 2px dashed #ccd0d5;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            margin: 25px 0;
+            color: #606770;
+            font-size: 14px;
+        }
+        .image-placeholder img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+            display: none; /* Becomes visible when source is added */
+        }
+        .caption {
+            font-size: 13px;
+            color: #65676b;
+            font-style: italic;
+            margin-top: -15px;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 8px; }
+        strong { color: #111; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Case Study: Subway Staff Training Tool</h1>
+        <h3>Product Design & Growth Experimentation Showcase</h3>
+        <p><strong>Designer & Developer:</strong> Dey Bas | <a href="https://linkedin.com" target="_blank">LinkedIn Profile</a></p>
+    </header>
+
+    <div class="meta-box">
+        <strong>Role:</strong> Sole UX/UI Designer & Full-Stack Developer (Personal Optimization Project, 2025)<br>
+        <strong>Objective:</strong> Accelerate fast-food employee onboarding via sensory interface design while evaluating user conversion friction in a freemium monetization funnel.
+    </div>
+
+    <h2>🚨 The Problem & Opportunity</h2>
+    <p>Training new fast-food kitchen staff to accurately memorize complex sandwich recipes (such as the <em>Fiesta Fajita</em> or <em>Mighty BMT</em>) is traditionally slow and prone to errors. Standard physical manuals or dense text charts are highly impractical to interact with mid-shift when workers have busy, messy hands.</p>
+    <ul>
+        <li><strong>The UX Goal:</strong> Design a minimalist, mobile-first interface optimized for high-speed kitchen environments using structured, split audio cues to enable hands-free line tracking.</li>
+        <li><strong>The Business Challenge:</strong> Implement and evaluate a local browser-tracked freemium model to capture user conversion interest points, directly aligning with growth engineering practices.</li>
+    </ul>
+
+    <h2>👥 User Research & Environmental Constraints</h2>
+    <p>By assessing real-world quick-service restaurant (QSR) operational patterns, I mapped out three specific user friction points:</p>
+    <ul>
+        <li><strong>Tactile Limitations:</strong> Operators work with wet or greasy hands. Traditional multi-tap menus or dropdown lists fail completely under speed stress.</li>
+        <li><strong>Cognitive Layering:</strong> Subway recipes are strictly divided into physical prep sequences (Phase 1: Proteins & Cheese; Phase 2: Veggies & Condiments). Information must be delivered in matching operational blocks.</li>
+        <li><strong>Attention Economy:</strong> A line cook's eyes must remain on the build board for safety and consistency, making short, localized audio feedback loops superior to video or text instructions.</li>
+    </ul>
+
+    <h2>📐 Layout Architecture & Interaction Flow</h2>
+    <p>To keep the application instantly accessible on the line, the dashboard uses clear content modules built directly around rapid physical actions.</p>
+
+    <!-- REPLACE IMAGE 1 HERE -->
+    <div class="image-placeholder">
+        <!-- Developer Note: Replace 'screenshot1.png' with your actual screenshot file name -->
+        <img src="screenshot1.png" alt="Main Interface Screen" id="img1" style="display:block; margin:0 auto; max-height:400px;">
+        <p>[Replace this box by saving your main dashboard screenshot as <strong>"screenshot1.png"</strong> in the same folder]</p>
+    </div>
+    <div class="caption">Figure 1: Clean, high-contrast recipe cards featuring oversized UI interaction paths for high-stress operational use.</div>
+
+    <h3>1. Oversized Tactile Interaction Paths</h3>
+    <p>I engineered specialized, high-contrast touch points featuring wide paddings (<code>padding: 18px 35px</code>) and tactile rounding. This guarantees that an operator can accurately hit the activation trigger with a quick thumb tap without needing to carefully aim or look away from the preparation counter.</p>
+
+    <h3>2. Segmented Information Architecture</h3>
+    <p>Rather than loading single, continuous audio tracks, each menu card separates the data stream into discrete <strong>FASE 1</strong> and <strong>FASE 2</strong> runtime elements. This allows the user to immediately fetch only the exact recipe step they are currently assembling, optimizing speed and reducing unnecessary data consumption.</p>
+
+    <h2>💰 Growth Engineering & Paywall Mechanics</h2>
+    <p>To demonstrate functional product thinking, the application is embedded with a strict client-side monetization gateway designed to capture user monetization responses.</p>
+
+    <!-- REPLACE IMAGE 2 HERE -->
+    <div class="image-placeholder">
+        <!-- Developer Note: Replace 'screenshot2.png' with your actual screenshot file name -->
+        <img src="screenshot2.png" alt="Freemium Paywall Modal" id="img2" style="display:block; margin:0 auto; max-height:400px;">
+        <p>[Replace this box by saving your upgrade modal screenshot as <strong>"screenshot2.png"</strong> in the same folder]</p>
+    </div>
+    <div class="caption">Figure 2: The dark modal wrapper overrides the primary interface to present clear subscription tier value and a simulated conversion path.</div>
+
+    <h3>1. Frictional Freemium Funneling</h3>
+    <p>To test growth metrics without introducing a high-friction registration screen, I built a background tracking matrix using client-side <code>localStorage</code> loops. The system tracks real-time usage event logs and strictly limits unpaid accounts to <strong>5 daily audio plays</strong>.</p>
+    <p>Upon clicking a 6th time, the application drops a deep modal wrapper (<code>rgba(0,0,0,0.7)</code>) that locks background page interactions, focusing the user's entire attention on the premium upgrade narrative.</p>
+
+    <h3>2. Monetization Strategy & Retention Triggers</h3>
+    <p>The system presents a simulated <strong>€4.99/month premium tier</strong> subscription. The modal structure is deliberately optimized to drive conversion by communicating direct product values that scale operational utility:</p>
+    <ul>
+        <li><strong>Friction Removal:</strong> Unlocking completely unrestricted, infinite audio plays.</li>
+        <li><strong>Value Expansion:</strong> Upselling advanced features including detailed macro image walkthroughs, video layout training guides, and offline database caching.</li>
+    </ul>
+
+    <h2>💻 Technical Summary</h2>
+    <ul>
+        <li><strong>Frontend Stack:</strong> Native HTML5 Semantic Tags, Document Object Model (DOM) Event Manipulation, Responsive Layout Controls.</li>
+        <li><strong>Storage Engine:</strong> Stateless <code>localStorage</code> session management to persist user usage history seamlessly between application loads.</li>
+    </ul>
+
+</body>
+</html>
